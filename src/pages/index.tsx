@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Prismic from '@prismicio/client';
-import { FiCalendar, FiUser } from 'react-icons/fi';
+import { FiClock, FiCalendar, FiUser } from 'react-icons/fi';
 import { useState } from 'react';
 import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
@@ -107,6 +107,10 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
                     <FiUser />
                     {post.data.author}
                   </li>
+                  {/* <li>
+                    <FiClock />
+                    {`${readTime}`}
+                  </li> */}
                 </ul>
               </a>
             </Link>
